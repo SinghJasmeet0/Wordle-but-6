@@ -1,0 +1,134 @@
+html, body{
+    height: 100%;
+    background-color:#121213 ;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+header{
+    font-family: 'serif';
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+h1{
+    margin: 15px;
+}
+
+.window-container{
+    display: flex;
+    text-align: center;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+}
+.message-container{
+    color: #121213;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translate(-50%,0);
+}
+.inmsg{
+        padding: 1rem;
+        background: rgba(128, 128, 128, 0.755);
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 15px;
+        color: rgba(255, 255, 255, 0.785);
+}
+.title-container{
+    display: flex;
+    flex-direction: row;
+    color:gainsboro;
+    justify-content: center ;
+    border-bottom: 1px solid rgb(39, 38, 38) ;
+}
+
+.game-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto 2rem auto;
+    width: 24.5rem;
+    color: white;
+}
+
+.line{
+    display: flex;
+}
+
+.key-container{
+    position:absolute;
+    bottom: 50px;
+    flex-shrink: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 28rem; 
+    left: 50%;
+    transform: translate(-50%,0);
+
+}
+
+
+.keys{
+    background-color: #818384;
+    color: white;
+    width: 2.2rem;
+    height: 3.1rem;
+    font-weight: bold;
+    margin: 4px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.box{
+    border: 2px solid #585858;
+    justify-content: space-between;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 5px;
+    font-weight: bold;
+
+
+}
+.selected{
+    background-color: #000000;
+}
+
+.flip{
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping{
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+.red{
+    background-color: rgba(110, 26, 26, 0.707);
+}
+.grey{
+    background-color: #3a3a3c;
+}
+.yellow{
+    background-color: #b59f3a;
+}
+.green{
+    background-color: #538d4e;
+}
+#⌫{
+    width: 60px;
+}
+
+#ENTER{
+    width: 60px;
+}
